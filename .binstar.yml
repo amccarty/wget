@@ -36,8 +36,8 @@ platform:
 #===============================================================================
 
 ## Run before the script
-# before_script:
-#   - echo "before_script!"
+before_script:
+  - conda config --set anaconda_upload yes
 ## Put your main computations here!  
 script:
   - conda build .
